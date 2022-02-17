@@ -17,49 +17,20 @@ body {
     font-style: normal;   
 }
 .home {
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
     height: 100%;
     position: relative;
     &__wrap {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url('../images/home_image.png');
-        min-height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url('../images/home_img.jpg');
+        min-height: 50vh;
         width: 100%;
         height: 100%;
         clip-path: polygon(100% 0, 100% 80%, 50% 95%, 0 80%, 0 0);
         background-color: transparent;
         background-size: cover;
         background-repeat: no-repeat;       
-        padding: 23.33rem 0 16.67rem;             
-    }
-    &__arrows {
-        width: 3.75rem;
-        height: 3.75rem;
-        border-radius: 2px;
-        background-color: $color_bg_arrow;
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        color: $color_arrow;
-        @media (max-width: $md) {           
-            display: none;
-        }
-        &--right {
-            top: 43%;
-            right:4.17rem;            
-        }
-        &--left {
-            top: 43%;
-            left:4.17rem;
-        }   
-        @media (hover) {
-            &:hover {
-            background-color: $main_color-theme;
-            color: $main_color-light;
-            }
-        }            
+        padding: 17rem 0 15rem;             
     }
     &__arrow {
         border: solid;
@@ -122,30 +93,19 @@ body {
     width: 100%;
     margin: 0 auto;
     @media (max-width: $xl) {           
-        max-width: 80rem;
+        max-width: 90%;
     }
-    @media (max-width: $lg) {           
-        max-width: 70rem;
+    @media (min-width: $xxl) {           
+        max-width: 80%;
     }
-    @media (max-width: $md) {           
-        max-width: 60rem;
-    }
-    @media (max-width: 500px) {           
-        max-width: 50rem;
-    } 
-    @media (max-width: $sm) {           
-        max-width: 37rem;
-    }
-    @media (max-width: $xs) {           
-        max-width: 33rem;
-    }    
 }
 .header {
     width: 100%;     
-    padding: 3.34rem 0;
+    padding: 2rem 0;
     color: $main_color;
     position: absolute;
-    z-index: 5;     
+    z-index: 5; 
+    transition: 0.2s;     
     &__container {
         display: flex;   
         align-items: center;
@@ -156,32 +116,51 @@ body {
         background-color: $color_bg_footer;
         top: 0;
         left: 0;
-        z-index: 10; 
-        padding: 2rem 0;       
+        z-index: 10;        
+        transition: 0.2s;    
     }
     &__item {
         display: flex; 
-        text-decoration: none;       
+        text-decoration: none; 
+        &:nth-child(3) {
+            @media (max-width: 900px) {
+                display: none;                
+            }
+        }      
     }
     &__logo {
         cursor: pointer;
-        font-size: 3rem;
-        letter-spacing: 1px;
-        line-height: 3.42rem;
-        color: $color_logo;
-        font-weight: 300;
-        padding: 4px 8px;
-        border: 3px solid $main_color;
-        &--special {
-            color: $color_logo_dark;
-            font-weight: 700;
-            background-color: $main_color;
-            padding: 4px 10px;
+        width: 200px;
+        @media (max-width: $lg) {
+            width: 150px;               
+        }
+        @media (max-width: $sm) {
+            width: 120px;               
         }
     }
     &__navigation {
         display: flex; 
         align-items: center;
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    &__icon {
+        text-decoration: none;
+        font-size: 1.67rem;        
+        padding: 10px;
+        color: $main_color-light;
+        cursor: pointer;
+        @media (max-width: $sm) {           
+            padding: 5px;
+        }  
+        @media (hover) {
+            &:hover {
+                color: $main_color-theme;
+            }    
+        }
     }
 }
 .list {
@@ -193,15 +172,15 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 0 15px;
     }
     &__link {
         cursor: pointer;
         padding: 10px 0;
-        margin-left: 5rem;
         text-decoration: none;
         color: $main_color;
         text-transform: uppercase;
-        font-size: 1.17rem;
+        font-size: 1.2rem;
         font-weight: 700;
         line-height: 2;
         &:active, &:hover  {
@@ -227,7 +206,7 @@ body {
         background: $main_color;    
     }
 }    
-@media (max-width: $lg) {
+@media (max-width: 900px) {
     .burger__label {
         display: flex;
         cursor: pointer;
@@ -267,7 +246,7 @@ body {
         }
     } 
     .burger:checked ~ .header__navigation {
-        transform: translateY(30%);
+        transform: translateY(35%);
     }
 }
 .homepage {
@@ -290,7 +269,10 @@ body {
         font-size: 6rem;
         letter-spacing: 7px;
         font-weight: 700;  
-        margin: 0 0 2.08rem;  
+        margin: 0 0 2.08rem;
+        max-width: 950px;
+        text-align: center;
+        text-transform: uppercase;
         @media (max-width: $md) {           
             font-size: 4rem;
         }   
@@ -308,7 +290,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 2.08rem 0;
     } 
     &__line {
         width: 6.58rem;
@@ -373,6 +354,23 @@ body {
         }
     }         
 }
+.about {
+    background-image: url('../images/depositphotos_4178661-stock-photo-easel-paint-palette.jpg');
+    background-size: 50%;
+    background-position: right 0 top 50%;
+    min-height: 700px;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    &__text {
+        max-width: 600px;
+        font-size: 1.4rem;
+        line-height: 3.33rem;
+        color: $color_title;
+        font-weight: 600;
+        margin: 40px 0;
+        width: 100%;
+    }
+}
 .blog {
     display: flex;
     flex-direction: column;
@@ -390,6 +388,7 @@ body {
         font-family: $font-family2;
         filter: drop-shadow(0px 1px 0px $main_color-light);
         margin: 1.25rem 0;
+        text-transform: uppercase;
     }
     &__text {        
         font-size: 1.17rem;
@@ -397,6 +396,7 @@ body {
         color: $main_color-dark;
         font-weight: 400;
         margin: 1.25rem 0;
+        text-align: center;
     }
     &__lines {
         margin: 1.25rem 0;
@@ -411,22 +411,63 @@ body {
         grid-template-rows: repeat(2, 1fr);
         gap: 0;
         width: 100%;
-        @media (min-width: 1922px) {
-            gap: 3rem;
-            background-color: $main_color-theme;
-        }
+        grid-template-areas:
+        "a b c d"
+        "e f h j"; 
         @media (max-width: $xl) {           
-            grid-template-rows: repeat(2, 1fr);            
+            grid-template-rows: repeat(2, 1fr);              
         } 
         @media (max-width: $md) {           
             grid-template-columns: repeat(2, 0.5fr);
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 0.5fr);  
+            grid-template-areas:
+            "a b"
+            "e f"
+            "c d"
+            "h j"; 
+        }  
+        @media (max-width: $sm) {  
+            grid-template-columns: repeat(1, 1fr); 
+            grid-template-rows: repeat(8, 1fr); 
+            grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            "f"
+            "e"
+            "j"
+            "h"; 
         }         
     }
     &__item { 
         position: relative;        
         width: 100%; 
-        height: 100%;       
+        height: 100%; 
+        &:nth-of-type(1) {
+            grid-area: a;
+        }
+        &:nth-of-type(2) {
+            grid-area: b;
+        }  
+        &:nth-of-type(3) {
+            grid-area: c;
+        }
+        &:nth-of-type(4) {
+            grid-area: d;
+        } 
+        &:nth-of-type(5) {
+            grid-area: e;
+        }
+        &:nth-of-type(6) {
+            grid-area: f;
+        }
+        &:nth-of-type(7) {
+            grid-area: h;
+        }
+        &:nth-of-type(8) {
+            grid-area: j;
+        } 
     }  
     &__images { 
         top: 0;
@@ -434,22 +475,19 @@ body {
         width: 100%;
         object-fit: cover;
         object-position: center;
+        position: absolute;
     }  
 }
-.hover {
-    position:absolute; 
-    z-index: 2;     
+.hover {     
     background-color: $main_color_bg;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    padding: 4.17rem;
+    padding: 2rem;
     color: $main_color-light;
-    cursor: pointer;
-    text-decoration: none;
     &__arrow {
         width: 0;
         height: 0;
@@ -457,7 +495,6 @@ body {
         border-bottom: 5.83rem solid transparent;
         border-right: 3.75rem solid $main_color-theme;
         border-left: none;
-        cursor: pointer;
         top: calc(50% - 5.83rem);
         left: -3.75rem;
         position: absolute;
@@ -487,6 +524,9 @@ body {
                 border-left: 5rem solid $main_color-theme; 
             }                 
         }
+        @media (max-width: $sm) { 
+            display: none;
+        }
     }
     &__subtitle {
         font-size: 1.17rem;
@@ -502,22 +542,19 @@ body {
         letter-spacing: 1px;
         font-weight: 600;
         font-family: $font-family2;
-        margin: 2.08rem 0 0 0;
+        margin: 2.08rem 0 0;
+        text-transform: uppercase;
         @media (max-width: 1600px) {
             font-size: 1.5rem;  
-            margin: 1rem 0 0 0;        
+            margin: 1rem 0 0;        
         }        
         &::after {
             content: "";
             display: block;
-            width: 3.67rem;
-            border: 4px solid $main_color-light;
+            border-top: 1px solid $main_color-light;
             z-index: 5;
             margin: 1.25rem 0 0 0; 
-            left: 0; 
-            @media (max-width: $xl) {           
-                border: 1px solid $main_color-light;
-            }              
+            left: 0;             
         }
     }
     &__text {
@@ -529,16 +566,25 @@ body {
             font-size: 1.2rem;  
             margin: 2rem 0 0 0;        
         }
-        @media (max-width: $xl) {           
-            display: none;
-        } 
+        & p {
+            margin: 0;
+            @media (max-width: 1200px) {
+                line-height: 22px;  
+            }
+        }
     }    
     &__button {
         font-size: 1.5rem;
         line-height: 2rem;
         font-weight: 600;
         font-style: italic; 
-        margin:4.17rem 0 0 0;
+        margin:4.17rem 0 0 0;        
+        cursor: pointer;
+        text-decoration: none;
+        color: $main_color-light;
+        &:hover {
+            opacity: 0.7;
+        }
         @media (max-width: 1600px) {
             font-size: 1.3rem;  
             margin: 2rem 0 0 0;        
