@@ -10,16 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-document.addEventListener('DOMContentLoaded', function() {
-    var elms = document.querySelectorAll('.slider--special');
-    for (var n = 0, len = elms.length; n < len; n++) {
-      new Slider(elms[n],
-        {            
-            autoplay: false,
-            interval: 3000
-        });
-    }
-});
 
 /*fixed header*/
 window.onscroll = function() {myFunction()};        
