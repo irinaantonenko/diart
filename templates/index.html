@@ -18,6 +18,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">      
 <link rel="stylesheet" href="../scss/normalize.css">
 <link rel="stylesheet" href="../icomoon/style.css">
+<link rel="stylesheet" href="../scss/chief-slider.min.css">
 <link rel="stylesheet" href="../scss/style.css">   
 </head>
 <body>
@@ -37,9 +38,9 @@
                     <ul class="list">
                         <li class="list__item"><a class="list__link" href="#about"><span class="list__item--active">О нас</span></a></li>
                         <li class="list__item"><a class="list__link" href="#blog">Расписание</a></li>
-                        <li class="list__item"><a class="list__link" href="#">Фото</a></li>
-                        <li class="list__item"><a class="list__link" href="#Рricing">Отзывы</a></li>
-                        <li class="list__item"><a class="list__link" href="#team">Вопросы и ответы</a></li>
+                        <li class="list__item"><a class="list__link" href="#gallery">Галерея</a></li>
+                        <li class="list__item"><a class="list__link" href="#reviews">Отзывы</a></li>
+                        <!--<li class="list__item"><a class="list__link" href="#contacts">Контакты</a></li>-->
                     </ul>
                 </nav>                   
             </div>
@@ -171,188 +172,124 @@
                 </div>                        
             </div>               
         </section>
-        <section id="team" class="team">
-            <div class="team__wrap">
-                <div class="container team__container">
-                    <div class="team__block">
-                        <h2 class="team__title">OUR team</h2>
-                        <p class="team__text">Meet the craziest team. Share your thoughts with them.</p> 
-                        <div class="homepage__lines team__lines">
-                            <div class="homepage__line team__line"></div>
-                            <div class="homepage__square"></div>
-                            <div class="homepage__line team__line"></div>
-                        </div>                 
-                    </div>                  
-                    <div class="team__leaders">
-                        <div class="team__leader team__leader--pos1">
-                            <img class="team__images" src="../images/team1.png" alt="team">
-                        </div>                        
-                        <div class="team__relative">
-                            <div class="team__leader team__leader--pos2">
-                                <img class="team__images" src="../images/team.png" alt="team">                         
-                            </div>
-                            <div class="team__info">
-                                <p class="team__lead">Kazi Erfan</p>
-                                <p class="team__post">UI/UX Designer</p>     
-                            </div>
-                        </div>                        
-                        <div class="team__leader team__leader--pos3">
-                            <img class="team__images" src="../images/team2.png" alt="team">
-                        </div>
-                        <div class="team__leader team__leader--pos4">
-                            <img class="team__images" src="../images/team3.png" alt="team">
-                        </div>
-                        <div class="team__leader team__leader--pos5">
-                            <img class="team__images" src="../images/team5.png" alt="team">
-                        </div>                         
-                    </div>                           
-                </div>
-            </div>
-        </section>
-        <section id="stats" class="stats">
-            <div class="container stats__container">
-                <div class="stats__item">
-                    <div class="stats__square"><span class="stats__icons icon-heart"></span></div>
-                    <p class="stats__number">3891</p>
-                    <h4 class="stats__title">User Favourites</h4>
-                </div>
-                <div class="stats__item">
-                    <div class="stats__square"><span class="stats__icons icon-price-tag"></span></div>
-                    <p class="stats__number">281K</p>
-                    <h4 class="stats__title">Posts Last 24 Hours</h4>
-                </div>
-                <div class="stats__item">
-                    <div class="stats__square"><span class="stats__icons icon-point-right"></span></div>
-                    <p class="stats__number">618</p>
-                    <h4 class="stats__title">Total Posts</h4>
-                </div>                
-                <div class="stats__item">
-                    <div class="stats__square"><span class="stats__icons icon-star-full"></span></div>
-                    <p class="stats__number">178</p>
-                    <h4 class="stats__title">Campaigns</h4>
-                </div>
-                <div class="stats__item">
-                    <div class="stats__square"><span class="stats__icons icon-bookmark"></span></div>
-                    <p class="stats__number">285</p>
-                    <h4 class="stats__title">Amazing Features</h4>
-                </div>
-            </div>
-        </section> 
-        <section id="Рricing" class="pricing">
-            <div class="container pricing__container">
-                <h2 class="pricing__title">OUR pricing</h2>
-                <p class="pricing__text">A 30 days free trial for all. A brief story about how this process works, keep an eye till the end.</p>
-                <div class="homepage__lines pricing__lines">
-                    <div class="homepage__line pricing__line"></div>
+        <section class="gallery" id="gallery">
+            <div class="container blog__container">
+                <h2 class="blog__title">Галерея</h2>
+                <p class="blog__text">Мы гордимся  большими и маленькими достижениями наших учеников</p>
+                <div class="homepage__lines blog__lines">
+                    <div class="homepage__line blog__line"></div>
                     <div class="homepage__square"></div>
-                    <div class="homepage__line pricing__line"></div>
+                    <div class="homepage__line blog__line"></div>
                 </div> 
-                <div class="pricing__content">
-                    <div class="pricing__item">
-                        <div class="pricing__header">
-                            <h3 class="pricing__name">STARTER</h3>                                
-                        </div>
-                        <div class="pricing__block">
-                            <div class="pricing__squares"> 
-                                <div class="pricing__square">         
-                                    <p class="pricing__value">$19</p> 
-                                    <p class="pricing__time">per month</p>
-                                </div>     
-                            </div> 
-                            <p class="pricing__text">Competition Analysis Methods</p>
-                            <p class="pricing__text">All Ranked URLs</p>
-                            <p class="pricing__text">International Support System</p>
-                            <p class="pricing__text">Social Media Tracking</p>
-                            <button class="pricing__button">CHOOSE PLAN</button>                 
-                        </div>                              
-                    </div> 
-                    <div class="pricing__item">
-                        <div class="pricing__header pricing__header--special">
-                            <h3 class="pricing__name">PREMIUM</h3>                                
-                        </div>
-                        <div class="pricing__block">
-                            <div class="pricing__squares"> 
-                                <div class="pricing__square">         
-                                    <p class="pricing__value pricing__value--special">$39</p> 
-                                    <p class="pricing__time">per month</p>
-                                </div>     
-                            </div>
-                            <p class="pricing__text">Competition Analysis Methods</p>
-                            <p class="pricing__text">All Ranked URLs</p>
-                            <p class="pricing__text">International Support System</p>
-                            <p class="pricing__text">Social Media Tracking</p>
-                            <button class="pricing__button pricing__button--special">CHOOSE PLAN</button>                 
-                        </div>                                                       
+            </div>
+            <div class="slider">
+                <div class="slider__container">
+                  <div class="slider__wrapper">
+                    <div class="slider__items">
+                      <div class="slider__item">
+                        <img src="../images/img_1.jpg" alt="photo">
+                      </div>
+                      <div class="slider__item">
+                        <img src="../images/img_2.jpg" alt="photo">
+                      </div>
+                      <div class="slider__item">
+                        <img src="../images/img_3.jpg" alt="photo">
+                      </div>
+                      <div class="slider__item">
+                        <img src="../images/img_4.jpg" alt="photo">
+                      </div>
+                      <div class="slider__item">
+                        <img src="../images/img_5.jpg" alt="photo">
+                      </div>
+                      <div class="slider__item">
+                        <img src="../images/img_6.jpg" alt="photo">
+                      </div>
+                      <div class="slider__item">
+                        <img src="../images/img_7.jpg" alt="photo">
+                      </div>
+                      <div class="slider__item">
+                        <img src="../images/img_8.webp" alt="photo">
+                      </div>
+                      <div class="slider__item">
+                        <img src="../images/img_9.jpg" alt="photo">
+                      </div>
+                      <div class="slider__item">
+                        <img src="../images/img_10.jpg" alt="photo">
+                      </div>
+                      <div class="slider__item">
+                        <img src="../images/img_11.jpg" alt="photo">
+                      </div>
+                      <div class="slider__item">
+                        <img src="../images/img_12.jpg" alt="photo">
+                      </div>
                     </div>
-                    <div class="pricing__item">
-                        <div class="pricing__header">
-                            <h3 class="pricing__name">BUSINESS</h3>                                
-                        </div>
-                        <div class="pricing__block">
-                            <div class="pricing__squares"> 
-                                <div class="pricing__square">         
-                                    <p class="pricing__value">$99</p> 
-                                    <p class="pricing__time">per month</p>
-                                </div>     
-                            </div>
-                            <p class="pricing__text">Competition Analysis Methods</p>
-                            <p class="pricing__text">All Ranked URLs</p>
-                            <p class="pricing__text">International Support System</p>
-                            <p class="pricing__text">Social Media Tracking</p>
-                            <button class="pricing__button">CHOOSE PLAN</button>                 
-                        </div>                                               
-                    </div>   
-                </div>               
+                  </div>
+                </div>
+                <a href="#" class="slider__control" data-slide="prev"></a>
+                <a href="#" class="slider__control" data-slide="next"></a>
             </div>
         </section>
-         
-        <section id="contact" class="contact">
-            <div class="container contact__container">
-                <h2 class="contact__title">KEEP IN TOUCH</h2>
-                <p class="contact__text">Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec.</p>
-                <div class="homepage__lines contact__lines">
-                    <div class="homepage__line contact__line"></div>
+        <!--<section id="contacts" class="contacts">
+            <div class="container blog__container">
+                <h2 class="blog__title">Отзывы</h2>
+                <p class="blog__text">Что говорят наши клиенты</p>
+                <div class="homepage__lines blog__lines">
+                    <div class="homepage__line blog__line"></div>
                     <div class="homepage__square"></div>
-                    <div class="homepage__line contact__line"></div>
-                </div> 
-                <div class="contact__content">
-                    <div class="contact__item">
-                        <div class="contact__address">
-                            <h4 class="contact__subtitle">OUR ADDRESS</h4>
-                            <p class="contact__info"><a href="https://goo.gl/maps/V6hjsWqLW2tGjEYf9" class="contact__link">House #13, Streat road, Sydney 2310 Australia</a></p>                            
-                        </div>
-                        <div class="contact__phone">
-                            <h4 class="contact__subtitle">CALL US</h4>
-                            <p class="contact__info"><a class="contact__link" href="tel:8801681091425">+ 880 168 109 1425</a></p>
-                            <p class="contact__info"><a class="contact__link" href="tel:0216809142">+ 0216809142</a></p>
-                        </div>
-                        <div class="contact__email">
-                            <h4 class="contact__subtitle">EMAIL US</h4>
-                            <p class="contact__info"><a class="contact__link" href="contactus@email.com">contactus@email.com</a></p>
-                        </div> 
-                    </div> 
-                    <form action="#" method="get" class="contact__item contact__item--special">
-                        <div class="contact__name">
-                            <label class="contact__label">Name</label>
-                            <input class="contact__input" type="text" name="name">
-                        </div>
-                        <div class="contact__mail">
-                            <label class="contact__label">E-mail</label>
-                            <input class="contact__input" type="email" name="E-mail">
-                        </div>
-                        <div class="contact__subject">
-                            <label class="contact__label">Subject</label>
-                            <input class="contact__input" type="text" name="subject">
-                        </div>
-                        <div class="contact__message">
-                            <label class="contact__label">Message</label>
-                            <input class="contact__input contact__input--special" type="text" name="message">
-                        </div>
-                        <button class="contact__button">Send message</button>    
-                    </form> 
+                    <div class="homepage__line blog__line"></div>
                 </div>
             </div>
-        </section>
+        </section>-->
+        <section id="reviews" class="reviews">
+            <div class="container blog__container">
+                <h2 class="blog__title">Отзывы</h2>
+                <p class="blog__text">Что говорят наши клиенты</p>
+                <div class="homepage__lines blog__lines">
+                    <div class="homepage__line blog__line"></div>
+                    <div class="homepage__square"></div>
+                    <div class="homepage__line blog__line"></div>
+                </div>
+            </div>
+            <div class="slider slider--special">
+                <div class="slider__container">
+                  <div class="slider__wrapper">
+                    <div class="slider__items">
+                      <div class="slider__item slider__item--special">
+                        <div class="container">
+                            <p class="reviews__text">
+                                Огромное спасибо за мк по живописи! У вас замечательное, уютное и креативное пространство для творческой реализации мечт. Удивительно дружеская атмосфера! Ты и расслаблено наслаждаешься процессом и каждый раз в итоге получаешь кайф от результата. Спасибо! Прийду ещё обязательно!
+                            </p>
+                            <p class="reviews__text reviews__text--special">Лариса</p>
+                        </div>
+                      </div>
+                      <div class="slider__item slider__item--special">
+                        <div class="container">
+                            <p class="reviews__text">Пришла в студию на живопись, чтобы попробовать рисовать (в детстве вроде получалось). Понравилось, с тех пор прошло три года… Хожу с удовольствием до сих пор, многому научилась и хочется все больше и больше. Атмосфера замечательная — семейная, душевная.
+                            </p>
+                            <p class="reviews__text reviews__text--special">Виктория</p>
+                        </div>
+                      </div>
+                      <div class="slider__item slider__item--special">
+                        <div class="container">
+                            <p class="reviews__text"> Уже несколько лет, как я знакома с Diart и той классной командой, которая создает этот проект. Каждый мастер-класс, мероприятие, каждый образец и фото – наполнены любовью к тому, чем занимается студия. Тут, вас вдохновят на творчество и расскажут, как искать это самое вдохновение. 
+                            </p>
+                            <p class="reviews__text reviews__text--special">Ирина</p>
+                        </div>
+                      </div>
+                      <div class="slider__item slider__item--special">
+                        <div class="container">
+                            <p class="reviews__text">На мастер-классе «Интуитивное рисование» невероятная атмосфера! Теплая, дружеская обстановка, индивидуальный подход, позитивно, открыто, увлекательно.
+                            </p>
+                            <p class="reviews__text reviews__text--special">Маша</p>
+                        </div>
+                      </div>             
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="slider__control" data-slide="prev"></a>
+                <a href="#" class="slider__control" data-slide="next"></a>
+            </div>
+        </section>        
     </main>
     <footer class="footer">
         <a href="#home" class="footer__button"><div class="home__arrow"></div></a>
@@ -366,17 +303,7 @@
             <div class="footer__item"><span class="footer__text">Diart Kiev &#169; All Rights Reserved</span></div>
         </div>        
     </footer>
-    <script>
-        window.onscroll = function() {myFunction()};        
-        let header = document.getElementById("myHeader");
-        let sticky = header.offsetTop;        
-        function myFunction() {
-          if (window.pageYOffset > sticky) {
-            header.classList.add("header__fixed");
-          } else {
-            header.classList.remove("header__fixed");
-          }
-        }
-    </script>
+    <script src="../js/chief-slider.min.js"></script>
+    <script src="../js/common.js"></script>
 </body>
 </html>
